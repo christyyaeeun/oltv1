@@ -1,0 +1,8 @@
+{
+    "AppSyncApiName": "oltv1",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false,
+    "AuthModeLastUpdated": "2022-03-20T23:06:40.748Z",
+    "S3DeploymentBucket": "amplify-oltv1-dev-174911-deployment",
+    "S3DeploymentRootKey": "amplify-appsync-files/43f91307aa20eb5b0d4a22d15a03dbd2debf2513"
+}

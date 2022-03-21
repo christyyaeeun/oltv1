@@ -1,0 +1,102 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-oltv1-dev-174911-authRole",
+      "UnauthRoleArn": "arn:aws:iam::075411383252:role/amplify-oltv1-dev-174911-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::075411383252:role/amplify-oltv1-dev-174911-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-oltv1-dev-174911-deployment",
+      "UnauthRoleName": "amplify-oltv1-dev-174911-unauthRole",
+      "StackName": "amplify-oltv1-dev-174911",
+      "StackId": "arn:aws:cloudformation:us-east-1:075411383252:stack/amplify-oltv1-dev-174911/f7b76320-a89f-11ec-b532-0ae4e4ccaef9",
+      "AmplifyAppId": "d8gbq2ust0r90"
+    }
+  },
+  "api": {
+    "oltv1": {
+      "service": "AppSync",
+      "providerPlugin": "awscloudformation",
+      "output": {
+        "authConfig": {
+          "defaultAuthentication": {
+            "authenticationType": "API_KEY",
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7,
+              "apiKeyExpirationDate": "2022-03-27T23:06:33.004Z",
+              "description": "oltv1-api"
+            }
+          },
+          "additionalAuthenticationProviders": []
+        },
+        "GraphQLAPIIdOutput": "2fbawng3qzhsbelo7ipuvck75i",
+        "GraphQLAPIEndpointOutput": "https://gj7lkydmp5fctahvalxoxetilu.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-nrvdet2fhbej7eja2nmj2ggyhu"
+      },
+      "lastPushTimeStamp": "2022-03-21T00:28:24.121Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-oltv1-dev-174911-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apioltv1"
+      },
+      "lastPushDirHash": "GOaEFX+eYZlW2vPKSx+tMsyvjpw="
+    }
+  },
+  "auth": {
+    "oltv1d1732836": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false,
+      "frontendAuthConfig": {
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "signupAttributes": [
+          "EMAIL",
+          "NAME"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-oltv1-dev-174911-deployment/amplify-cfn-templates/auth/oltv1d1732836-cloudformation-template.json",
+        "logicalId": "autholtv1d1732836"
+      },
+      "lastPushTimeStamp": "2022-03-21T00:28:24.122Z",
+      "output": {
+        "UserPoolId": "us-east-1_bDE6hcVtg",
+        "AppClientIDWeb": "4g4a0m1mj29j2fekoqvqfntu0j",
+        "AppClientID": "3lsqm5avrgblsi78ce9m0iegcd",
+        "IdentityPoolId": "us-east-1:1c50c525-51e2-486d-9cf5-ba044a681956",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:075411383252:userpool/us-east-1_bDE6hcVtg",
+        "IdentityPoolName": "oltv1d1732836_identitypool_d1732836__dev",
+        "UserPoolName": "oltv1d1732836_userpool_d1732836"
+      },
+      "lastPushDirHash": "DJxKH0FbQwoSN5D3VzE2Q2zzPbA="
+    }
+  },
+  "storage": {
+    "oltv1imagestorage": {
+      "service": "S3",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "lastPushTimeStamp": "2022-03-21T00:28:24.138Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-oltv1-dev-174911-deployment/amplify-cfn-templates/storage/cloudformation-template.json",
+        "logicalId": "storageoltv1imagestorage"
+      },
+      "output": {
+        "BucketName": "oltv1-storage174911-dev",
+        "Region": "us-east-1"
+      },
+      "lastPushDirHash": "V7a1C/P0kAtN2o/042yfgGGsz7Q="
+    }
+  }
+}
